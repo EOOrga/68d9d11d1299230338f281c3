@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0048B8">
+  <meta name="description" content="BESSIERES GERALDINE is a local-first operations app for interviews, leads, employees, and container tracking.">
+  <title>BESSIERES GERALDINE</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --ink: #001238;
+      --blue: #0048b8;
+      --cyan: #00a6c8;
+      --green: #2e7d32;
+      --paper: #f7f9fd;
+      --line: #dbe5f3;
+      --text: #223044;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px clamp(18px, 5vw, 72px);
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0;
+      color: var(--ink);
+    }
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+    }
+    nav {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    nav a { color: var(--ink); text-decoration: none; }
+    main { overflow: hidden; }
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      align-items: end;
+      padding: clamp(28px, 5vw, 72px);
+      background:
+        linear-gradient(90deg, rgba(0, 18, 56, .92), rgba(0, 72, 184, .46)),
+        url("featured.png") center/cover no-repeat;
+      color: #fff;
+    }
+    .hero-content {
+      max-width: 760px;
+      padding-bottom: 6vh;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(42px, 8vw, 92px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 660px;
+      font-size: clamp(18px, 2.2vw, 24px);
+      margin: 0 0 26px;
+      color: #eef6ff;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 900;
+    }
+    section {
+      padding: clamp(42px, 6vw, 82px) clamp(18px, 5vw, 72px);
+    }
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.05;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 180px;
+    }
+    .card strong {
+      display: block;
+      color: var(--ink);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .workflow {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .step {
+      border-left: 4px solid var(--cyan);
+      padding: 6px 0 6px 16px;
+    }
+    .step b {
+      display: block;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+    .privacy {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .privacy-panel {
+      background: var(--ink);
+      color: #fff;
+      border-radius: 8px;
+      padding: 26px;
+    }
+    footer {
+      padding: 24px clamp(18px, 5vw, 72px);
+      color: #44546c;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 860px) {
+      header { position: static; align-items: flex-start; }
+      nav { display: none; }
+      .grid, .steps, .privacy { grid-template-columns: 1fr; }
+      .hero { min-height: 72vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="favicon.png" alt="">
+      <span>BESSIERES GERALDINE</span>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#workspace">Workspace</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>BESSIERES GERALDINE</h1>
+        <p>A focused Android workspace for scheduling interviews, managing leads, checking employee coverage, and tracking containers without cloud accounts or external APIs.</p>
+        <a class="button" href="#workspace">View app workflow</a>
+      </div>
+    </section>
+    <section id="workspace">
+      <div class="section-title">
+        <h2>Daily operations stay organized.</h2>
+        <p>The mobile app brings routine business coordination into one local-first tool built for quick checks and repeated updates during the workday.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <strong>Interview scheduling</strong>
+          Track candidates, roles, interview owners, and next meeting times from the daily board.
+        </article>
+        <article class="card">
+          <strong>Lead management</strong>
+          Move prospects through clear stages and keep the next action visible for follow-up.
+        </article>
+        <article class="card">
+          <strong>Employee directory</strong>
+          Check team roles, sites, and availability when planning coverage or interview ownership.
+        </article>
+        <article class="card">
+          <strong>Container tracking</strong>
+          Monitor references, routes, ETAs, and status progress for each active container.
+        </article>
+      </div>
+    </section>
+    <section id="workflow" class="workflow">
+      <div class="section-title">
+        <h2>Built for practical handoffs.</h2>
+        <p>Each screen is shaped around the work that needs attention now, with simple local forms for adding leads, interviews, and container records.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <b>Review</b>
+          Start with a compact dashboard of open leads, scheduled interviews, active containers, and staffing coverage.
+        </div>
+        <div class="step">
+          <b>Update</b>
+          Add records or advance container and lead statuses as tasks move through the day.
+        </div>
+        <div class="step">
+          <b>Reference</b>
+          Use settings and privacy screens to confirm the app remains local to the Android device.
+        </div>
+      </div>
+    </section>
+    <section id="privacy" class="privacy">
+      <div>
+        <h2>No account. No sync. No APIs.</h2>
+        <p>BESSIERES GERALDINE stores records on the Android device using local app storage. It does not request Android permissions, collect analytics, access location, or upload operations data to a server.</p>
+      </div>
+      <div class="privacy-panel">
+        <strong>Support</strong>
+        <p>BESSIERES GERALDINE<br>support@bessieresgeraldine.com</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    BESSIERES GERALDINE operations app. Local records remain under the control of the Android device owner.
+  </footer>
+</body>
+</html>
