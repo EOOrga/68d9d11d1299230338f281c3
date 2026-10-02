@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.bessieresgeraldine.operations": {
+      "title": "BESSIERES GERALDINE",
+      "short_description": "Manage interviews, leads, employees, and containers in one local operations app.",
+      "full_description": "BESSIERES GERALDINE helps small operations teams coordinate the daily details that can otherwise spread across notes and messages.\n\nUse the app to schedule interviews, track lead stages and next actions, reference employee coverage, and monitor container routes and status progress. Records are saved on the device for fast offline access.\n\nThe app does not require an account, does not use external APIs, and does not upload operations records to a server.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:26:28.344155+00:00"
+    }
+  }
+}
