@@ -29,7 +29,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.bessieresgeraldine.operations"
+        applicationId = "com.bessieresgeraldine.fusutujs"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

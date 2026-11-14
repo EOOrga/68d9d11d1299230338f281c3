@@ -1,0 +1,1 @@
+Manage interviews, leads, employees, and containers in one local operations app.
