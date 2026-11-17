@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.bessieresgeraldine.operations"
+        applicationId = "com.bessieresgeraldine.laakss"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

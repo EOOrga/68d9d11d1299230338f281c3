@@ -55,7 +55,7 @@ class _BessieresOperationsAppState extends State<BessieresOperationsApp> {
 }
 
 ThemeData buildAppTheme() {
-  const seed = Color(0xFF0059D6);
+  const seed = Color(0xFF050505);
   final scheme = ColorScheme.fromSeed(
     seedColor: seed,
     brightness: Brightness.light,
