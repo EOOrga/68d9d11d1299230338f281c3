@@ -1,0 +1,5 @@
+BESSIERES GERALDINE helps small operations teams coordinate the daily details that can otherwise spread across notes and messages.
+
+Use the app to schedule interviews, track lead stages and next actions, reference employee coverage, and monitor container routes and status progress. Records are saved on the device for fast offline access.
+
+The app does not require an account, does not use external APIs, and does not upload operations records to a server.
